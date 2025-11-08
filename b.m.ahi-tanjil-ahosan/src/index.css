@@ -8,3 +8,7 @@
     --font-mon: "Montserrat", sans-serif;
    
 }
+#root{
+    margin: 0%;
+    overflow-x: hidden;
+}

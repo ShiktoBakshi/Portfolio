@@ -44,7 +44,7 @@ const Technology = () => {
   ];
 
   const tools = [
-    { name: "GitHub", icon: <FaGithub className="text-white text-4xl" /> },
+    { name: "GitHub", icon: <FaGithub className="text-white  text-4xl" /> },
     { name: "Netlify", icon: <SiNetlify className="text-teal-400 text-4xl" /> },
     { name: "Figma", icon: <FaFigma className="text-pink-400 text-4xl" /> },
     { name: "Vercel", icon: <SiVercel className="text-white text-4xl" /> },
@@ -62,7 +62,7 @@ const Technology = () => {
       </div>
 
       {/* Grid Layout */}
-      <div className="relative w-full mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-16 px-6">
+      <div className="relative w-full  justify-center mx-auto max-w-6xl  grid grid-cols-1 md:grid-cols-2 lg:gap-16 gap-5 px-6">
         {/* Divider line */}
         <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-linear-to-b from-cyan-950 via-gray-400 to-sky-500 animate-pulse"></div>
 
@@ -104,10 +104,10 @@ const Technology = () => {
 const Card = ({ title, color, data, aos }) => (
   <div
     data-aos={aos}
-    className={`bg-gray-900 border border-gray-700 rounded-3xl p-8 text-center  transition-all duration-500 ease-in-out relative`}
+    className={`bg-gray-900 border border-gray-700 rounded-3xl lg:p-8 text-center  transition-all duration-500 ease-in-out relative`}
   >
     <h2 className={`text-xl font-bold text-${color}-400 mb-6`}>{title}</h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 justify-center">
+    <div className="grid grid-cols-2  lg:gap-6 justify-center">
       {data.map((item) => (
         <div
           key={item.name}

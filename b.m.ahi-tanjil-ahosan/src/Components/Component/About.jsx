@@ -13,10 +13,10 @@ function About() {
     }, []);
 
     return (
-        <div id="about" className="min-h-screen flex flex-col mx-auto justify-center items-center py-5">
+        <div id="about" className="min-h-screen flex flex-col mx-auto justify-center items-center">
 
             {/* Container */}
-            <div className="flex flex-col lg:flex-row justify-between items-center lg:gap-20 w-11/12 md:w-3/4">
+            <div className="flex flex-col lg:flex-row lg:justify-between justify-center items-center  lg:gap-20 w-11/12 md:w-3/4">
 
                 {/* Left Side (Fade Right) */}
                 <motion.div
@@ -27,7 +27,7 @@ function About() {
                 >
                      <div
                     data-aos="fade-right"
-                    className="lg:p-8 rounded-2xl shadow-lg md:w-1/2 lg:w-full "
+                    className="lg:p-8 rounded-2xl shadow-lg md:w-full lg:w-full "
                 >
                     <Lottie animationData={codingAnimation} loop={true} />
                 </div>
@@ -42,7 +42,7 @@ function About() {
                 >
                      <div
                     data-aos="fade-left"
-                    className=" p-8 rounded-2xl shadow-lg md:w-1/2 lg:w-full "
+                    className=" p-8 rounded-2xl shadow-lg md:w-full lg:w-full "
                 >
 
                     <h2 className="font-bold text-4xl mb-6 text-cyan-500">
